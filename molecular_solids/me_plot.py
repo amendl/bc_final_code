@@ -35,7 +35,7 @@ if __name__=="__main__":
     fig, ax = plt.subplots(figsize=(2.79077651389,3.8),constrained_layout=True)
     plt.plot(data[_from:_to,0],summed[_from:_to,2],label="SCF",linewidth=0.5)
     # plt.plot(data[_from:_to,0],summed[_from:_to,2]+summed[_from:_to,3],label="MP2",linewidth=0.5)
-    plt.plot(data[_from:_to,0],summed[_from:_to,1]*(-1),label="DMA",linewidth=0.5)
+    plt.plot(data[_from:_to,0],summed[_from:_to,1],label="DMA",linewidth=0.5)
     # plt.yscale("symlog")
     plt.ylabel("Two body energy / Hartree")
     plt.xlabel("Cutoff distance / $a_0$")

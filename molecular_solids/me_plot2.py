@@ -55,12 +55,12 @@ if __name__=="__main__":
     
 
     fig, ax = plt.subplots(figsize=(2.79077651389*2,3.9),constrained_layout=True)
-    plt.plot(data[:,0],np.abs(summed[:,1]*(-1)-summed[:,2]),label=r"up to $0^\mathrm{th}$ order",linewidth=0.5)
-    plt.plot(data[:,0],np.abs(summed[:,1]*(-1)-summed[:,3]),label=r"up to $1^\mathrm{st}$ order",linewidth=0.5)
-    plt.plot(data[:,0],np.abs(summed[:,1]*(-1)-summed[:,4]),label=r"up to $2^\mathrm{nd}$ order",linewidth=0.5)
-    plt.plot(data[:,0],np.abs(summed[:,1]*(-1)-summed[:,5]),label=r"up to $3^\mathrm{rd}$ order",linewidth=0.5)
-    plt.plot(data[:,0],np.abs(summed[:,1]*(-1)-summed[:,6]),label=r"up to $4^\mathrm{th}$ order",linewidth=0.5)
-    plt.plot(data[:,0],np.abs(summed[:,1]*(-1)-summed[:,7]),label=r"up to $5^\mathrm{th}$ order",linewidth=0.5)
+    plt.plot(data[:,0],np.abs(summed[:,1]-summed[:,2]),label=r"up to $0^\mathrm{th}$ order",linewidth=0.5)
+    plt.plot(data[:,0],np.abs(summed[:,1]-summed[:,3]),label=r"up to $1^\mathrm{st}$ order",linewidth=0.5)
+    plt.plot(data[:,0],np.abs(summed[:,1]-summed[:,4]),label=r"up to $2^\mathrm{nd}$ order",linewidth=0.5)
+    plt.plot(data[:,0],np.abs(summed[:,1]-summed[:,5]),label=r"up to $3^\mathrm{rd}$ order",linewidth=0.5)
+    plt.plot(data[:,0],np.abs(summed[:,1]-summed[:,6]),label=r"up to $4^\mathrm{th}$ order",linewidth=0.5)
+    plt.plot(data[:,0],np.abs(summed[:,1]-summed[:,7]),label=r"up to $5^\mathrm{th}$ order",linewidth=0.5)
 
     # plt.plot(data[30:,0],np.abs(summed[30:,3]),label=r"$|\mathrm{SCF}-\mathrm{MP2}|$",linewidth=0.5)
     plt.yscale("log")
